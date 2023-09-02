@@ -1,0 +1,21 @@
+max-beta: 50
+
+# Message are written and parse by using a standart called MiniMessage that can be retreive here https://docs.advntr.dev/minimessage/format.html
+messages:
+
+  help:
+    """
+    <gray><b>-------<gold>Aide SDC</gold>-------</b></gray>
+    <gray>Ce plugin vous permet de trier vos items simplement. Les items que vous placerez dans un coffre <red>alpha</red> seront automatiquement triés et transférés dans des coffres <aqua>betas</aqua>.</gray>
+    <gray><b>-------<gold>Commandes</gold>-------</b></gray>
+    """
+    #sender.sendMessage(Component.text("/sdc create alpha <name> ").color(NamedTextColor.GOLD).append(Component.text("Permet de créer le coffre d'entrée des items").color(NamedTextColor.GRAY)));
+    #sender.sendMessage(Component.text("/sdc create beta <name> ").color(NamedTextColor.GOLD).append(Component.text("Permet de créer le coffre de sortie, avec un filtre sur l'item dans votre main").color(NamedTextColor.GRAY)));
+    #sender.sendMessage(Component.text("/sdc create beta <name> <filtre> ").color(NamedTextColor.GOLD).append(Component.text("Permet de créer le coffre de sortie, avec un filtre très spécifique").color(NamedTextColor.GRAY)));
+    #sender.sendMessage(Component.text("/sdc info ").color(NamedTextColor.GOLD).append(Component.text("Affiche des informations sur un coffre").color(NamedTextColor.GRAY)));
+    #sender.sendMessage(Component.text("/sdc remove ").color(NamedTextColor.GOLD).append(Component.text("Supprime un coffre").color(NamedTextColor.GRAY)));
+    #sender.sendMessage(Component.text("/sdc addFilter [filtre] ").color(NamedTextColor.GOLD).append(Component.text("Ajoute une liste de filtre au coffre beta").color(NamedTextColor.GRAY)));
+    #sender.sendMessage(Component.text("/sdc removeFilter [filtre] ").color(NamedTextColor.GOLD).append(Component.text("Retire une liste de filtre au coffre beta").color(NamedTextColor.GRAY)));
+    #sender.sendMessage(Component.text("/sdc persist ").color(NamedTextColor.GOLD).append(Component.text("Permet de répéter la dernière commande en boucle").color(NamedTextColor.GRAY)));
+
+language:

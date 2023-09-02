@@ -1,0 +1,9 @@
+name: MasterSDC
+main: fr.thefirstalpha.mastersdc.MasterSDC
+version: ${project.version}
+api-version: 1.18
+softdepend: [ LWC, LuckPerms, Vault ]
+commands:
+  sdc:
+    description: Manage SDC
+    usage: /sdc
