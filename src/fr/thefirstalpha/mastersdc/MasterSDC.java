@@ -61,7 +61,16 @@ public class MasterSDC extends JavaPlugin {
             lwc = ((LWCPlugin) lwcp).getLWC();
             lwc_protection = true;
         }
-
+        new UpdateChecker(this, UpdateCheckSource.GITHUB, "https://api.jeff-media.de/chestsort/latest-version.txt") // A link to a URL that contains the latest version as String
+                .setDownloadLink("https://www.chestsort.de") // You can either use a custom URL or the Spigot Resource ID
+                .setDonationLink("https://paypal.me/mfnalex")
+                .setChangelogLink(SPIGOT_RESOURCE_ID) // Same as for the Download link: URL or Spigot Resource ID
+                .setNotifyOpsOnJoin(true) // Notify OPs on Join when a new version is found (default)
+                .setNotifyByPermissionOnJoin("myplugin.updatechecker") // Also notify people on join with this permission
+                .setUserAgent(new UserAgentBuilder().addPluginNameAndVersion())
+                .checkEveryXHours(0.5) // Check every 30 minutes
+                .checkNow(); // And check right now
+    }
     }
 
 
