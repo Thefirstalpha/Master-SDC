@@ -32,6 +32,29 @@
                     <outputDirectory>build</outputDirectory>
                 </configuration>
             </plugin>
+<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-shade-plugin</artifactId>
+            <version>3.3.0</version>
+            <configuration>
+                <relocations>
+                    <!-- Using the maven-shade-plugin to shade and relocate the UpdateChecker -->
+                    <!-- Replace "your.package" with your plugin's package name -->
+                    <relocation>
+                        <pattern>com.jeff_media.updatechecker</pattern>
+                        <shadedPattern>your.package.updatechecker</shadedPattern>
+                    </relocation>
+                </relocations>
+            </configuration>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>shade</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
         </plugins>
         <resources>
             <resource>
